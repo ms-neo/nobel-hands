@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    margin: .9vh 10vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .links-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .6vh;
+}
+
+header nav .links-list li {
+    list-style: none;
+}
+
+header nav .links-list li .nav-link {
+    display: inline-block;
+    padding: 16px 4vh;
+    text-decoration: none;
+    color: #063157;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    transition: .3s;
+}
+
+header nav .links-list li .nav-link:hover {
+    color: #0ABFAA;
+}
+
+header nav .links-list li .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 0%;
+    height: 6px;
+    display: block;
+    background-color: #0ABFAA;
+}
+
+header nav .links-list li .nav-link:hover::before {
+    width: 100%;
+    transition: .4s ease-in-out;
+}
+
+header nav .logo img {
+    margin-top: 1vh;
+    width: 205px;
+    }
+
+.drop-btn{
+    padding: 2vh 4vh;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    transition: .5s ease-in-out;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    transition: .5s ease-in-out;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 130px;
+    height: 200px;
+    z-index: 1;
+    background: #fff;  
+}
+.dropdown-content .dropdown-a{
+display: block;
+padding: 2vh;
+font-size: 13px;
+margin-top: 1.5vh;
+transition: .3s ease-in-out;
+text-decoration: none;
+color: #063157;
+
+}
+.dropdown .dropdown-content .dropdown-a:hover{
+    background: #0ABFAA;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    transition: .5s ease-in-out;
+}
+/* -----------------------FOOTER----------------- */
+footer {
+    background: #063157;
+}
+
+footer .footer-links-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
+footer .footer-links-list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-links-list ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5vh;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+footer .footer-links-list ul li {
+    list-style: none;
+}
+
+footer .programs ul {
+    margin-top: 4vh;
+}
+
+footer .programs ul li a {
+    padding: 0 8vh;
+    font-size: 16px;
+}
+
+footer p {
+    text-align: center;
+    color: #C1C1C1;
+    font-size: 12px;
+    padding: 2vh;
+}
+
+footer .footer-links-list ul li a:hover {
+    color: #0ABFAA;
+}
+
+/* ---------------------EMPWERMENT PAGE ---------------------------- */
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.container h2 {
+    font-family: "open-sans-condensed", sans-serif;
+    color: #1D1D1D;
+    font-size: 1.5rem;
+    margin-bottom: 4vh;
+}
+ .container p {
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    color: #939393;
+    margin-top: 1.4vh;
+    line-height: 2;
+}
+.container .bottom p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.blue-box {
+    width: 100%;
+    min-height: 10vh;
+    background: #063157;
+    color: #fff;
+    text-align: center;
+}
+.blue-box h1 {
+    font-size: 1.8rem;
+    padding: 2.3vh;
+    font-family: 'open sans Condensed';
+}
+ .gray-box {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.gray-box .sub-gray-bx {
+    height: 100%;
+    padding: 20px 17px;
+    background: #F5F2F2;
+    width: 100%;
+    text-align: center;
+}
+.gray-box .sub-gray-bx a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #063157;
+    font-weight: 700;  
+    padding:20px 80px;
+
+}
+.gray-box .sub-gray-bx:hover {
+background: #C1C1C1;
+}
+
+#empowerment-section .gray-box .empower-clicked {
+    background: #fff;
+    cursor: default;
+    pointer-events: none;
+}
+
+ .container {
+    margin: 15vh 15vh;
+}
+#empowerment-section .container .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25vh;
+}
+
+#empowerment-section .container .mid,
+#empowerment-section .container .bottom {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    margin-bottom: 30vh;
+}
+#empowerment-section .mid-gray-box {
+    background: #F5F2F2;
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    top: 860px;
+    z-index: -5;
+}
+#empowerment-section .container .bottom {
+    grid-template-columns: 20% 5% 60%;
+    align-items: start;
+}
+#empowerment-section .container .bottom hr {
+    border: 0;
+    border-left: 2px solid #939393;
+}
+#empowerment-section .container img {
+    width: 90%;
+}
+/* ---------------------DRINKING WATER PAGE ---------------------------- */
+
+#drinking-water-section .gray-box .driniking-water-clicked {
+    background: #fff;
+    cursor: default;
+    pointer-events: none;
+}
+#drinking-water-section .container .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30vh;
+}
+#drinking-water-section .container .top img {
+    width: 90%;
+    margin-left: 10vh;
+}
+#drinking-water-section .container .mid,
+#drinking-water-section .container .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 30vh 0;
+}
+
+#drinking-water-section .mid-gray-box {
+    background: #F5F2F2;
+    width: 100%;
+    height: 29vh;
+    position: absolute;
+    top: 900px;
+    z-index: -5;
+}
+#drinking-water-section .container .bottom {
+    grid-template-columns: 20% 5% 60%;
+    align-items: start;
+}
+#drinking-water-section .container .mid p {
+    margin-left: 20vh;
+}
+#drinking-water-section .container .bottom hr {
+    border: 0;
+    border-left: 2px solid #939393;
+}
+
+/* ---------------------DRINKING WATER PAGE -----------*/
+#education-section .gray-box .education-clicked {
+    background: #fff;
+    cursor: default;
+    pointer-events: none;
+}
+
+#education-section .container .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30vh;
+}
+#education-section .container .top .text-part {
+    margin-right: 10vh;
+}
+#education-section .container .mid-1,
+#education-section .container .mid-2,
+#education-section .container .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 30vh 0;
+    gap: 10vh;
+}
+#education-section .container .mid-2 img{
+    margin-right: 10vh;
+}
+#education-section .container img {
+    width: 100%;
+}
+#education-section .mid-gray-box {
+    background: #F5F2F2;
+    width: 100%;
+    height: 29vh;
+    position: absolute;
+    top: 910px;
+    z-index: -5;
+}
+#education-section .container .bottom {
+    grid-template-columns: 20% 5% 60%;
+    align-items: start;
+}
+#education-section .container .bottom hr {
+    border: 0;
+    border-left: 2px solid #939393;
+}
+
+/* _______________________-----   PHONE VERISON _____--------------------------------- */
+
+@media all and (max-width:640px) {
+
+header nav .logo {
+    width: 70%;
+    margin: 1vh -7vh;
+}
+header nav {
+    display: block;
+    position: relative;
+}
+header nav .links-list {
+    position: absolute;
+    text-align: center;
+    display: none;
+    width: 100%;
+    margin: 5vh 0;
+    cursor: pointer;
+     background:#fff;
+     z-index: 1000;
+}
+header nav .links-list li {
+    margin: 5vh 0;
+}
+header nav .dropdown-content {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #fff;
+}
+header nav .dropdown-a {
+    padding: 16px 4vh;
+    text-decoration: none;
+    color: #063157;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header nav .hamburger {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -8vh;
+    top: 4.5vh;
+}
+header nav .hamburger .bar {
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background: #1D1D1D;
+    position: relative;
+}
+header nav .hamburger .bar::before,
+.bar::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background: #1D1D1D;
+}
+header nav .hamburger .bar::before {
+    transform: translateY(-10px);
+}
+header nav .hamburger .bar::after {
+    transform: translateY(10px);
+}
+header nav .hamburger.open .bar{
+   transform: translateX(5px);
+   background: transparent;
+} 
+.hamburger.open .bar::before {
+    transform: rotate(-45deg) translate(0px, 0px);
+}
+.hamburger.open .bar::after {
+    transform: rotate(45deg) translate(0px, 0px);
+}
+header nav .links-list.open {
+    display: block;
+}
+
+footer {
+    display: gird;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer .footer-links-list ul {
+    flex-direction: column;
+}
+
+footer .footer-links-list ul li {
+    margin: 2vh 0;
+}
+
+/* ---------------------------------EDUACATION---------------------- */
+main{
+    overflow: hidden;
+}
+.gray-box {
+    height: 10vh;
+}
+.gray-box .sub-gray-bx{
+    width:100% ;
+}
+.gray-box .sub-gray-bx a {
+    font-size: 1.1rem;
+    padding: 9px 2px;
+    text-align: center;
+}
+ hr {
+ display: none;
+}
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.container {
+    margin: 15vh 6vh;
+}
+
+#education-section .container .top {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20vh;
+}
+#education-section .container .top .text-part {
+    margin-bottom: 10vh;
+}
+#education-section .container img {
+    width: 90%;
+}
+#education-section .mid-gray-box {
+    top: 160vh;
+}
+#education-section .container .mid-1,
+#education-section .container .mid-2,
+#education-section .container .bottom {
+    grid-template-columns: 1fr;
+    margin: 20vh 0;
+    gap: 8vh;
+}
+#education-section .container .bottom {
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+#drinking-water-section .container .top {
+    grid-template-columns: 1fr;
+    margin-bottom: 30vh;
+}
+#drinking-water-section .container .top img {
+    width: 90%;
+    text-align: center;
+    margin-left: 0;
+    margin-top:8vh ;
+}
+#drinking-water-section .container .mid,
+#drinking-water-section .container .bottom {
+    grid-template-columns: 1fr;
+}
+#drinking-water-section .mid-gray-box {
+    top: 135vh;
+}
+#drinking-water-section .container .mid p {
+    margin-left: 0;
+    margin-top: 8vh;
+}
+#empowerment-section .container .top {
+    grid-template-columns: 1fr;
+}
+#empowerment-section .container .top .text-part{
+    margin-bottom: 8vh;
+}
+#empowerment-section .container .mid,
+#empowerment-section .container .bottom {
+    grid-template-columns: 1fr;
+}
+#empowerment-section .mid-gray-box {
+    height: 75vh;
+    top: 135vh; 
+}
+#empowerment-section .container img {
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+}
